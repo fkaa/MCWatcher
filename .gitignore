@@ -1,0 +1,9 @@
+# Intellij
+./idea
+.idea/
+*.iml
+*.iws
+
+# osx noise
+.DS_Store
+profile

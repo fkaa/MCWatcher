@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "MCWatcher",
+  "description": "This extension monitors the status of minecraft servers.",
+  "version": "0.0.1",
+  "background": {
+    "scripts": [
+      "jquery-2.1.0.min.js",
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "alarms",
+    "tabs",
+    "clipboardWrite",
+    "http://json.mcs.syfaro.net/"
+  ],
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "favicon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "dirt.png",
+    "48": "dirt-lg.png",
+    "128": "dirt-lg.png"
+  }
+}

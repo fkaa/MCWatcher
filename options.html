@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>MCWatcher Options</title>
+  <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+  <script src="jquery-2.1.0.min.js"></script>
+  <script src="options.js"></script>
+  <style>
+    body, head {
+      padding: 0;
+      margin: 8px;
+      min-width: 320px;
+      background-image: url('dirt.png');
+      font-family: FontAwesome, Arial, Helvetica, sans-serif;
+      font-size: 0.9em;
+      color: #f4f4f4;
+    }
+
+    a {
+      outline: none;
+      color: rgba(255, 255, 255, 0.53);
+      transition: 0.25s all ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    a:active {
+
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 1.5em;
+      padding: 2px 2px 6px;
+    }
+
+    td {
+      padding: 2px;
+    }
+
+    .tleft {
+      text-align: left;
+    }
+
+    .tright {
+      text-align: right;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .suffix {
+      color: rgba(255, 255, 255, 0.23);
+      transition: 0.25s all ease;
+      font-size: 1em;
+    }
+
+    tr:hover .suffix {
+      color: rgba(255, 255, 255, 0.53);
+    }
+
+    .mcw-options {
+      margin: 12px;
+      padding: 4px;
+      background-color: rgba(17, 17, 17, 0.71);
+    }
+
+    .input-group {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="mcw-options">
+    <table>
+      <tr>
+        <th class="tleft">Settings</th>
+        <th class="tright"></th>
+      </tr>
+      <tr>
+        <td>Frequency<span class="suffix"> (minutes)</span></td>
+        <td><input id="freq" class="right" type="number"></td>
+      </tr>
+      <tr>
+        <th class="tleft">Server List</th>
+      </tr>
+    </table>
+    <table id="options">
+      <tr>
+        <td><a id="add" href="#"><i class="fa fa-plus fa-fw"></i></a></td>
+        <td><a id="save" href="#" class="tright"><i class="fa fa-save fa-fw"></i></a></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
