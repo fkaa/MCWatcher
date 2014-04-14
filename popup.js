@@ -73,8 +73,6 @@ MCWatcher.refresh = function() {
   }
 };
 
-//TODO: notification filter per server?
-
 $(document).ready(function() {
   $('#refresh').click(function() {
     MCWatcher.fetch();
@@ -99,20 +97,9 @@ $(document).ready(function() {
   chrome.storage.onChanged.addListener(function(changes, namespace) {
     for (key in changes) {
       if (key === 'mcw-server-arr') {
-        /*MCWatcher.servers = changes[key].newValue || [];
-        MCWatcher.redo();
-        MCWatcher.refresh();*/
         MCWatcher.redo();
         MCWatcher.refresh();
-        var storageChange = changes[key];
-        console.log('Storage key "%s" in namespace "%s" changed. ' +
-            'Old value was "%s", new value is "%s".',
-          key,
-          namespace,
-          storageChange.oldValue,
-          storageChange.newValue);
       }
-
     }
   });
 });

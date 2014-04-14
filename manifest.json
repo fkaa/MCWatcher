@@ -3,7 +3,7 @@
 
   "name": "MCWatcher",
   "description": "This extension monitors the status of minecraft servers.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "background": {
     "scripts": [
       "jquery-2.1.0.min.js",
